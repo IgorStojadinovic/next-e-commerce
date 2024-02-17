@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <> 
-    <a className=' text-orange fixed z-[9999] bottom-0 text-4xl  2xl:top-0 right-0 m-5 cursor-pointer transition-all hover:text-6xl text-center' target='_blank'>
+    <a className=' text-orange fixed z-[9999] bottom-0 text-4xl  right-0 m-5 cursor-pointer transition-all hover:text-6xl text-center' target='_blank' href='https://github.com/IgorStojadinovic/next-e-commerce'>
       <FaGithub/>
     </a>
 
