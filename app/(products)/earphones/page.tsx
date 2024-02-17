@@ -29,7 +29,7 @@ const Earphones = () => {
         )}
       ></div>
       <div className='mb-[7.5rem]  relative'>
-        <p className='bg-black text-white p-6 text-center uppercase font-bold tracking-widest 2xl:pt-5 2xl:pb-[56px] border-none 2xl:text-3xl'>
+        <p className='bg-black text-white p-6 text-center uppercase font-bold tracking-widest 2xl:pb-9 border-none 2xl:text-3xl '>
           Earphones
         </p>
         <button
