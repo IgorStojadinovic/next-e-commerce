@@ -132,7 +132,7 @@ export const HeadphonesPage = [
     mobile: XX99MARKII,
     tablet: XX99MARKIITablet,
     desktop:XX99MARKIIDesktop,
-    className: 'flex flex-col 2xl:items-start lg:text-left items-center gap-6 justify-center text-center  '
+    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
   },
   {
     type: '',
@@ -142,7 +142,7 @@ export const HeadphonesPage = [
     mobile: XX99MARKI,
     tablet: XX99MARKITablet,
     desktop:XX99MARKIDesktop,
-    className: 'flex flex-col 2xl:items-start lg:text-left items-center gap-6 justify-center text-center '
+    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
   },
   {
     type: '',
@@ -152,7 +152,7 @@ export const HeadphonesPage = [
     mobile: XX59,
     tablet: XX59Tablet,
     desktop:XX59Desktop,
-    className: 'flex flex-col 2xl:items-start lg:text-left items-center gap-6 justify-center text-center '
+    className: 'flex flex-col items-center justify-center gap-6 text-center text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
   },
 ] as const;
 

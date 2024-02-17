@@ -15,7 +15,7 @@ const Footer = () => {
   const { isOpen, cartIsOpen } = useMainContextProvider();
   return (
     <div className='mt-[7.5rem] md:mt-[6rem]'>
-      <section className='px-6 text-center md:px-10 md:flex lg:px-40  2xl:px-80 flex flex-col lg:flex-row-reverse lg:mb-52 lg:flex lg:justify-between'>
+      <section className='px-6 text-center md:px-10 md:flex  lg:px-40 xl:px-32  2xl:px-80 flex flex-col lg:flex-row-reverse lg:mb-52 lg:flex lg:justify-between'>
         <div className='w-full lg:w-1/2 md:w-full flex lg:justify-end'>
           <Image
             src={FooterImg}
@@ -54,7 +54,7 @@ const Footer = () => {
         <div />
       </section>
 
-      <div className='mt-[7.5rem] md:mt-[6rem] px-6 bg-black text-white flex flex-col justify-center gap-12 items-center md:justify-start md:items-start md:px-10 lg:px-40 2xl:px-80 lg:flex-row lg:flex-wrap'>
+      <div className='mt-[7.5rem] md:mt-[6rem] px-6 bg-black text-white flex flex-col justify-center gap-12 items-center md:justify-start md:items-start md:px-10 lg:px-40  xl:px-32 2xl:px-80 lg:flex-row lg:flex-wrap'>
         <div className='w-[100px] h-[5px] bg-orange'></div>
         <div className='lg:flex lg:justify-between w-full 2xl:flex-col 2xl:gap-5 '>
           <h2 className='text-white font-bold text-2xl text-center md:text-left '>audiophile</h2>
