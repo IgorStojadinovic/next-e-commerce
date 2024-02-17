@@ -165,7 +165,7 @@ export const SpeakersPage = [
     mobile: ZX9Mobile,
     tablet: ZX9Tablet,
     desktop:ZX9Desktop,
-    className: 'flex flex-col 2xl:items-start lg:text-left items-center gap-6 justify-center text-center '
+    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
   },
   {
     type: '',
@@ -175,7 +175,7 @@ export const SpeakersPage = [
     mobile: ZX7Mobile,
     tablet: ZX7Tablet,
     desktop:ZX7Desktop,
-    className: 'flex flex-col 2xl:items-start lg:text-left items-center gap-6 justify-center text-center '
+    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
   },
 ] as const;
 
@@ -188,7 +188,7 @@ export const EarphonesPage = [
     mobile: YX1,
     tablet: YX1Tablet,
     desktop:YX1Desktop,
-    className: 'flex flex-col 2xl:items-start lg:text-left items-center gap-6 justify-center text-center '
+    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
   },
 ] as const;
 

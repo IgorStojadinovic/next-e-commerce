@@ -12,8 +12,8 @@ const ProductContainer = ({ name, type, desc, mobile, link,tablet,desktop,classN
     <>
       
       <Image src={mobile} alt={name} className='rounded-lg  md:hidden mb-8 md:mb-0 lg:hidden xl:hidden 2xl:hidden w-full' quality={100}  />
-      <Image src={tablet} alt={name} className='rounded-lg  hidden lg:hidden md:mb-0 xl:hidden  md:flex ' quality={100} height={560}  />
-      <Image src={desktop} alt={name} className='rounded-lg  md:hidden hidden md:mb-0 lg:flex xl:flex xl:w-1/2' quality={100}  height={560} />
+      <Image src={tablet} alt={name} className='rounded-lg  hidden lg:hidden mb-8  xl:hidden  md:flex ' quality={100} height={560}  />
+      <Image src={desktop} alt={name} className='rounded-lg  md:hidden hidden mb-8 lg:flex xl:flex xl:w-1/2' quality={100}  height={560} />
       <div className={`${className}  `} >
         <span className='text-orange  uppercase tracking-[0.5rem] 2xl:pb-4'>
           {type}
@@ -27,7 +27,7 @@ const ProductContainer = ({ name, type, desc, mobile, link,tablet,desktop,classN
         >
           {name}
         </h1>
-        <p className='text-black/60 font-medium md:px-20 xl:px-0 2xl:px-24 ' >
+        <p className='text-black/60 font-medium md:px-20 xl:px-0 2xl:px-8 ' >
           {desc}
         </p>
         <Link

@@ -41,7 +41,7 @@ const Earphones = () => {
         {EarphonesPage.map((product) => (
           <div
             key={product.name}
-            className=' flex flex-col  text-center px-6 2xl:flex 2xl:px-80 2xl:flex-row-reverse 2xl:odd:flex-row 2xl:even:text-right 2xl:my-40 lg:gap-32 2xl:gap-52 md:px-8 md:items-center'
+            className='flex flex-wrap  px-6 xl:flex-row lg:flex-nowrap xl:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16 xl:h-[560px] xl:gap-32 2xl:gap-16 '
           >
             <ProductContainer
               name={product.name}

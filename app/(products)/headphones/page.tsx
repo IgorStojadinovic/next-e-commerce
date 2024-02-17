@@ -32,7 +32,7 @@ const Headphones = () => {
         )}
       ></div>
       <div className='mb-[7.5rem]  relative '>
-        <p className='bg-black text-white p-6 text-center uppercase font-bold tracking-widest 2xl:pb-9 border-none  '>
+        <p className='bg-black text-white p-6 text-center uppercase font-bold tracking-widest 2xl:pb-9 border-none 2xl:text-3xl '>
           Headphones
         </p>
         <button
@@ -46,7 +46,7 @@ const Headphones = () => {
           /**flex flex-col text-center justify-between even:my-24 px-6 lg:px-32 xl:my-40 2xl:flex 2xl:even:text-right 2xl:px-80 xl:flex-row-reverse xl:odd:flex-row lg:odd:flex-row  gap-20 md:px-8 md:items-center */
             key={product.name}
             className={clsx('', {
-              'flex flex-wrap even:my-32 px-6 xl:flex-row lg:flex-nowrap xl:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16 xl:h-[560px] xl:gap-32 2xl:gap-16 ':
+              'flex flex-wrap even:my-32 px-6 xl:flex-row lg:flex-nowrap lg:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16  xl:h-[560px] xl:gap-32 2xl:gap-16 ':
                 pathname === '/headphones',
             })}
           >
