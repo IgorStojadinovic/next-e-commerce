@@ -6,7 +6,6 @@ import ProductContainer from '@/components/product-container'
 import { SecondaryNavigation } from '@/components/secondary-navigation'
 import { useMainContextProvider } from '@/context/main-context'
 import { useRouter, usePathname } from 'next/navigation'
-
 import clsx from 'clsx'
 
 const Headphones = () => {
@@ -47,10 +46,9 @@ const Headphones = () => {
         </button>
         {HeadphonesPage.map((product) => (
           <div
-            /**flex flex-col text-center justify-between even:my-24 px-6 lg:px-32 xl:my-40 2xl:flex 2xl:even:text-right 2xl:px-80 xl:flex-row-reverse xl:odd:flex-row lg:odd:flex-row  gap-20 md:px-8 md:items-center */
             key={product.name}
             className={clsx('', {
-              'flex flex-wrap even:my-32 px-6 xl:flex-row lg:flex-nowrap lg:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16  xl:h-[560px] xl:gap-32 2xl:gap-16 2xl:gap-60':
+              'flex flex-wrap even:my-32 px-6 xl:flex-row lg:flex-nowrap lg:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16  xl:h-[560px] xl:gap-32  2xl:gap-60':
                 pathname === '/headphones',
             })}
           >

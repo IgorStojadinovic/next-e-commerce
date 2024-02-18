@@ -291,7 +291,7 @@ const Checkout = () => {
           </section>
         </form>
       </div>
-      <section className='flex flex-col gap-6 p-8 absolute top-[10rem] shadow-xl z-40 hidden'>
+      <section className='flex-col gap-6 p-8 absolute top-[10rem] shadow-xl z-40 hidden'>
         <div className='bg-orange rounded-full h-16 w-16 flex justify-center items-center text-white text-3xl'>
           <IoCheckmarkSharp />
         </div>
