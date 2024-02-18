@@ -8,6 +8,17 @@ import clsx from 'clsx'
 import { SecondaryNavigation } from './secondary-navigation'
 import { useMainContextProvider } from '@/context/main-context'
 import { FaGithub } from 'react-icons/fa6'
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment, addItemToCart } from '../app/store/slice'
+import type { RootState } from '../app/store/store'
+
+type Item = {
+  name: string
+  total: number
+  defaultPrice: number
+  quantity: number
+  itemKey: string
+}
 
 const ProductSceleton = ({
   type,
@@ -23,6 +34,24 @@ const ProductSceleton = ({
 }: IndividualProduct) => {
   const router = useRouter()
   const { isOpen, cartIsOpen } = useMainContextProvider()
+  const quantity = useSelector((state: RootState) => state.cart.quantity)
+  const cart = useSelector((state: RootState) => state.cart.cart)
+  const dispatch = useDispatch()
+
+  const addItem = (quantity: number) => {
+    if (quantity) {
+      const item: Item = {
+        name: name,
+        total: 2999 * quantity,
+        defaultPrice: 2999,
+        quantity: quantity,
+        itemKey: name,
+      }
+
+      dispatch(addItemToCart(item))
+    }
+  }
+  console.log(cart)
   return (
     <>
       <a
@@ -32,6 +61,8 @@ const ProductSceleton = ({
       >
         <FaGithub />
       </a>
+      <div></div>
+
       <div
         className={clsx(
           '',
@@ -60,6 +91,7 @@ const ProductSceleton = ({
               alt={name}
               quality={100}
               className='h-full w-full '
+              loading='lazy'
             />
           </picture>
 
@@ -74,15 +106,30 @@ const ProductSceleton = ({
             <p className='mb-10 font-bold'>{price}</p>
             <div className='flex justify-between gap-4'>
               <div className='flex items-center bg-light-gray/10 text-center justify-between  w-full uppercase text-sm font-semibold tracking-widest'>
-                <button className='text-light-gray text-[1.2rem] w-2/5 h-full hover:bg-light-gray/15'>
+                <button
+                  onClick={() => {
+                    dispatch(decrement())
+                  }}
+                  className='text-light-gray text-[1.2rem] w-2/5 h-full hover:bg-light-gray/15'
+                >
                   -
                 </button>
-                <span className=' w-2/5'>0</span>
-                <button className='text-light-gray text-[1.2rem] w-2/5 h-full hover:bg-light-gray/15'>
+                <span className=' w-2/5'>{quantity}</span>
+                <button
+                  onClick={() => {
+                    dispatch(increment())
+                  }}
+                  className='text-light-gray text-[1.2rem] w-2/5 h-full hover:bg-light-gray/15'
+                >
                   +
                 </button>
               </div>
-              <button className='bg-btn-orange text-white w-full p-4  uppercase text-sm font-semibold tracking-widest hover:bg-white border border-orange border-1 hover:text-orange'>
+              <button
+                onClick={() => {
+                  addItem(quantity)
+                }}
+                className='bg-btn-orange text-white w-full p-4  uppercase text-sm font-semibold tracking-widest hover:bg-white border border-orange border-1 hover:text-orange'
+              >
                 Add to cart
               </button>
             </div>

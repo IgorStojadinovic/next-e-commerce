@@ -64,6 +64,7 @@ const MobileNavLinkComponent = ({
         width={height}
         height={width}
         className='z-20'
+        loading='lazy'
       />
       <p className='mb-2 uppercase font-bold'>{name}</p>
       <Link
@@ -98,6 +99,7 @@ const SecondaryNavLinkComponent = ({
         width={height}
         height={width}
         className='z-20'
+        loading='lazy'
       />
       <p className='mb-2 uppercase font-bold'>{name}</p>
       <Link

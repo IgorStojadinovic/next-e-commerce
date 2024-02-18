@@ -24,6 +24,7 @@ const ProductContainer = ({
         alt={name}
         className='rounded-lg  md:hidden mb-8 md:mb-0 lg:hidden xl:hidden 2xl:hidden w-full'
         quality={100}
+        loading='lazy'
       />
       <Image
         src={tablet}
@@ -31,6 +32,7 @@ const ProductContainer = ({
         className='rounded-lg  hidden lg:hidden mb-8  xl:hidden  md:flex '
         quality={100}
         height={560}
+        loading='lazy'
       />
       <Image
         src={desktop}
@@ -38,6 +40,7 @@ const ProductContainer = ({
         className='rounded-lg  md:hidden hidden mb-8 lg:flex xl:flex xl:w-1/2'
         quality={100}
         height={560}
+        loading='lazy'
       />
       <div className={`${className}  `}>
         <span className='text-orange  uppercase tracking-[0.5rem] 2xl:pb-4'>

@@ -9,13 +9,12 @@ import ZX9 from '../public/assets/home/mobile/image-speaker-zx9.png'
 import YX from '../public/assets/home/mobile/image-earphones-yx1.jpg'
 import ZX9Tablet from '@/public/assets/home/tablet/image-speaker-zx9.png'
 import ZX9Desktop from '@/public/assets/home/mobile/image-speaker-zx9.png'
-
 import { useMainContextProvider } from '@/context/main-context'
+
 import clsx from 'clsx'
 
 export default function Home() {
   const { isOpen, cartIsOpen } = useMainContextProvider()
-
   return (
     <>
       <a
@@ -25,7 +24,6 @@ export default function Home() {
       >
         <FaGithub />
       </a>
-
       <div
         className={clsx(
           '',
