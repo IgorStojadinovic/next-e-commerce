@@ -1,21 +1,25 @@
-'use client';
-import React from 'react';
-import ProductContainer from '@/components/product-container';
-import clsx from 'clsx';
-import { EarphonesPage } from '@/lib/data';
-import { SecondaryNavigation } from '@/components/secondary-navigation';
-import { useMainContextProvider } from '@/context/main-context';
-import { useRouter } from 'next/navigation';
-import { FaGithub } from 'react-icons/fa6';
+'use client'
+import React from 'react'
+import ProductContainer from '@/components/product-container'
+import clsx from 'clsx'
+import { EarphonesPage } from '@/lib/data'
+import { SecondaryNavigation } from '@/components/secondary-navigation'
+import { useMainContextProvider } from '@/context/main-context'
+import { useRouter } from 'next/navigation'
+import { FaGithub } from 'react-icons/fa6'
 
 const Earphones = () => {
-  const { isOpen, cartIsOpen } = useMainContextProvider();
-  const router = useRouter();
+  const { isOpen, cartIsOpen } = useMainContextProvider()
+  const router = useRouter()
   return (
     <>
-    <a className=' text-orange fixed z-[9999] bottom-0 text-4xl  right-0 m-5 cursor-pointer transition-all hover:text-6xl text-center' target='_blank' href='https://github.com/IgorStojadinovic/next-e-commerce'>
-      <FaGithub/>
-    </a>
+      <a
+        className=' text-orange fixed z-[9999] bottom-0 text-4xl  right-0 m-5 cursor-pointer transition-all hover:text-6xl text-center'
+        target='_blank'
+        href='https://github.com/IgorStojadinovic/next-e-commerce'
+      >
+        <FaGithub />
+      </a>
       <div
         className={clsx(
           '',
@@ -41,7 +45,7 @@ const Earphones = () => {
         {EarphonesPage.map((product) => (
           <div
             key={product.name}
-            className='flex flex-wrap  px-6 xl:flex-row lg:flex-nowrap xl:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16 xl:h-[560px] xl:gap-32 2xl:gap-16 '
+            className='flex flex-wrap  px-6 xl:flex-row lg:flex-nowrap xl:even:flex-row-reverse xl:px-32 2xl:px-80 lg:mt-16 xl:h-[560px] xl:gap-32  2xl:gap-60 '
           >
             <ProductContainer
               name={product.name}
@@ -60,7 +64,7 @@ const Earphones = () => {
         <SecondaryNavigation />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Earphones;
+export default Earphones

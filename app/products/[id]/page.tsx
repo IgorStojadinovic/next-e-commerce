@@ -1,7 +1,7 @@
-'use client';
-import React, { FC } from 'react';
-import { useParams } from 'next/navigation';
-import ProductSceleton from '@/components/product-skeleton-page';
+'use client'
+import React, { FC } from 'react'
+import { useParams } from 'next/navigation'
+import ProductSceleton from '@/components/product-skeleton-page'
 import {
   XX99MARKIIProduct,
   XX99MARKIProduct,
@@ -9,15 +9,13 @@ import {
   ZX9Product,
   ZX7Product,
   YXProduct,
-} from '@/lib/data';
-
+} from '@/lib/data'
 
 const PageId: FC = () => {
-  const param = useParams();
+  const param = useParams()
 
   return (
     <div>
-      
       {param.id === 'xx99-2' && (
         <ProductSceleton
           type={XX99MARKIIProduct.type}
@@ -103,7 +101,7 @@ const PageId: FC = () => {
         />
       )}
     </div>
-  );
-};
+  )
+}
 
-export default PageId;
+export default PageId

@@ -1,61 +1,60 @@
-'use client';
+'use client'
+import React, { useEffect, useState, createContext, useContext } from 'react'
 
-import React, { useEffect, useState, createContext, useContext } from 'react';
-
-type MenuStatus = false | true;
-type LocalStorage = string;
-type Cart = [];
+type MenuStatus = false | true
+type LocalStorage = string
+type Cart = []
 
 type MainContextProviderProps = {
-  children: React.ReactNode;
-};
+  children: React.ReactNode
+}
 
 type MainContextType = {
-  isOpen: MenuStatus;
-  cartIsOpen: MenuStatus;
-  cart: Cart;
-  toggleMenu: () => void;
-  toggleCart: () => void;
-};
+  isOpen: MenuStatus
+  cartIsOpen: MenuStatus
+  cart: Cart
+  toggleMenu: () => void
+  toggleCart: () => void
+}
 
-const MainContext = createContext<MainContextType | null>(null);
+const MainContext = createContext<MainContextType | null>(null)
 
 export default function MainContextProvider({
   children,
 }: MainContextProviderProps) {
-  const [isOpen, setIsOpen] = useState<MenuStatus>(false);
-  const [cartIsOpen, setCartIsOpen] = useState<MenuStatus>(false);
-  const [cart, setCart] = useState<Cart>([]);
+  const [isOpen, setIsOpen] = useState<MenuStatus>(false)
+  const [cartIsOpen, setCartIsOpen] = useState<MenuStatus>(false)
+  const [cart] = useState<Cart>([])
 
   const toggleMenu = () => {
     if (isOpen) {
-      setIsOpen((prev) => !prev);
-      window.localStorage.setItem('menuStatus', 'closed');
+      setIsOpen((prev) => !prev)
+      window.localStorage.setItem('menuStatus', 'closed')
     } else {
-      setIsOpen((prev) => !prev);
-      window.localStorage.setItem('menuStatus', 'open');
+      setIsOpen((prev) => !prev)
+      window.localStorage.setItem('menuStatus', 'open')
     }
-  };
+  }
 
   const toggleCart = () => {
     if (cartIsOpen) {
-      setCartIsOpen((prev) => !prev);
+      setCartIsOpen((prev) => !prev)
     } else {
-      setCartIsOpen((prev) => !prev);
+      setCartIsOpen((prev) => !prev)
     }
-  };
+  }
 
   useEffect(() => {
     const localTheme = window.localStorage.getItem(
       'menuStatus'
-    ) as LocalStorage | null;
+    ) as LocalStorage | null
 
     if (localTheme === 'closed') {
-      setIsOpen(false);
+      setIsOpen(false)
     } else {
-      setIsOpen(true);
+      setIsOpen(true)
     }
-  }, []);
+  }, [])
 
   return (
     <MainContext.Provider
@@ -69,17 +68,17 @@ export default function MainContextProvider({
     >
       {children}
     </MainContext.Provider>
-  );
+  )
 }
 
 export function useMainContextProvider() {
-  const context = useContext(MainContext);
+  const context = useContext(MainContext)
 
   if (context === null) {
     throw new Error(
       'useMainContextProvider must be used within a MainContextProvider'
-    );
+    )
   }
 
-  return context;
+  return context
 }

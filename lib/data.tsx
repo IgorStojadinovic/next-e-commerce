@@ -1,86 +1,86 @@
 // Mobile menu images
-import headphonesThumb from '../public/assets/shared/desktop/image-category-thumbnail-headphones.png';
-import speakersThumb from '../public/assets/shared/desktop/image-category-thumbnail-speakers.png';
-import earphonesThumb from '../public/assets/shared/desktop/image-category-thumbnail-earphones.png';
+import headphonesThumb from '../public/assets/shared/desktop/image-category-thumbnail-headphones.png'
+import speakersThumb from '../public/assets/shared/desktop/image-category-thumbnail-speakers.png'
+import earphonesThumb from '../public/assets/shared/desktop/image-category-thumbnail-earphones.png'
 
 //Headphones images
-import XX99MARKII from '../public/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg';
-import XX99MARKIITablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg';
-import XX99MARKIIDesktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg';
+import XX99MARKII from '../public/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg'
+import XX99MARKIITablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg'
+import XX99MARKIIDesktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg'
 
-import XX99MARKI from '../public/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg';
-import XX99MARKITablet from '../public/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg';
-import XX99MARKIDesktop from '../public/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg';
+import XX99MARKI from '../public/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg'
+import XX99MARKITablet from '../public/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg'
+import XX99MARKIDesktop from '../public/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg'
 
-import ZX9Mobile from '../public/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg';
-import ZX9Tablet from '../public/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg';
-import ZX9Desktop from '../public/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg';
+import ZX9Mobile from '../public/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+import ZX9Tablet from '../public/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg'
+import ZX9Desktop from '../public/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg'
 
-import ZX7Mobile from '../public/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg';
-import ZX7Tablet from '../public/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg';
-import ZX7Desktop from '../public/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg';
+import ZX7Mobile from '../public/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'
+import ZX7Tablet from '../public/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg'
+import ZX7Desktop from '../public/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg'
 
-import XX59 from '../public/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg';
-import XX59Tablet from '../public/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg';
-import XX59Desktop from '../public/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg';
+import XX59 from '../public/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg'
+import XX59Tablet from '../public/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg'
+import XX59Desktop from '../public/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg'
 
-import XX99MARKIITHUMB from '../public/assets/shared/mobile/image-xx99-mark-two-headphones.jpg';
-import XX99MARKITHUMB from '../public/assets/shared/mobile/image-xx99-mark-one-headphones.jpg';
-import XX59THUMB from '../public/assets/shared/mobile/image-xx59-headphones.jpg';
-import ZX7THUMB from '../public/assets/shared/mobile/image-zx7-speaker.jpg';
-import ZX9THUMB from '../public/assets/shared/mobile/image-zx9-speaker.jpg';
+import XX99MARKIITHUMB from '../public/assets/shared/mobile/image-xx99-mark-two-headphones.jpg'
+import XX99MARKITHUMB from '../public/assets/shared/mobile/image-xx99-mark-one-headphones.jpg'
+import XX59THUMB from '../public/assets/shared/mobile/image-xx59-headphones.jpg'
+import ZX7THUMB from '../public/assets/shared/mobile/image-zx7-speaker.jpg'
+import ZX9THUMB from '../public/assets/shared/mobile/image-zx9-speaker.jpg'
 
 //Headphones Gallery
 // XX99-MARK-II
-import XX99MARKIIGalleryImage1Mobile from '../public/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg';
-import XX99MARKIIGalleryImage1Tablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg';
-import XX99MARKIIGalleryImage1Desktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg';
+import XX99MARKIIGalleryImage1Mobile from '../public/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg'
+import XX99MARKIIGalleryImage1Tablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg'
+import XX99MARKIIGalleryImage1Desktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg'
 
-import XX99MARKIIGalleryImage3Mobile from '../public/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg';
-import XX99MARKIIGalleryImage3Tablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg';
-import XX99MARKIIGalleryImage3Desktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg';
+import XX99MARKIIGalleryImage3Mobile from '../public/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg'
+import XX99MARKIIGalleryImage3Tablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg'
+import XX99MARKIIGalleryImage3Desktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg'
 
-import XX99MARKIIGalleryImage2Mobile from '../public/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg';
-import XX99MARKIIGalleryImage2Tablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg';
-import XX99MARKIIGalleryImage2Desktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg';
+import XX99MARKIIGalleryImage2Mobile from '../public/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg'
+import XX99MARKIIGalleryImage2Tablet from '../public/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg'
+import XX99MARKIIGalleryImage2Desktop from '../public/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg'
 
 //---------------------------------------------//
 // XX99-MARK-I
-import XX99MARKIGalleryImage1Mobile from '../public/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg';
-import XX99MARKIGalleryImage2Mobile from '../public/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg';
-import XX99MARKIGalleryImage3Mobile from '../public/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg';
+import XX99MARKIGalleryImage1Mobile from '../public/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg'
+import XX99MARKIGalleryImage2Mobile from '../public/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg'
+import XX99MARKIGalleryImage3Mobile from '../public/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg'
 
 //---------------------------------------------//
 // XX59
-import XX59GalleryImage1Mobile from '../public/assets/product-xx59-headphones/mobile/image-gallery-1.jpg';
-import XX59GalleryImage2Mobile from '../public/assets/product-xx59-headphones/mobile/image-gallery-2.jpg';
-import XX59GalleryImage3Mobile from '../public/assets/product-xx59-headphones/mobile/image-gallery-3.jpg';
+import XX59GalleryImage1Mobile from '../public/assets/product-xx59-headphones/mobile/image-gallery-1.jpg'
+import XX59GalleryImage2Mobile from '../public/assets/product-xx59-headphones/mobile/image-gallery-2.jpg'
+import XX59GalleryImage3Mobile from '../public/assets/product-xx59-headphones/mobile/image-gallery-3.jpg'
 
 //Speakers thumbs
-import ZX9 from '../public/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg';
-import ZX7 from '../public/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg';
+import ZX9 from '../public/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg'
+import ZX7 from '../public/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg'
 
 // ZX9
-import ZX9GalleryImage1Mobile from '../public/assets/product-zx9-speaker/mobile/image-gallery-1.jpg';
-import ZX9GalleryImage2Mobile from '../public/assets/product-zx9-speaker/mobile/image-gallery-2.jpg';
-import ZX9GalleryImage3Mobile from '../public/assets/product-zx9-speaker/mobile/image-gallery-3.jpg';
+import ZX9GalleryImage1Mobile from '../public/assets/product-zx9-speaker/mobile/image-gallery-1.jpg'
+import ZX9GalleryImage2Mobile from '../public/assets/product-zx9-speaker/mobile/image-gallery-2.jpg'
+import ZX9GalleryImage3Mobile from '../public/assets/product-zx9-speaker/mobile/image-gallery-3.jpg'
 
 // ZX7
-import ZX7GalleryImage1Mobile from '../public/assets/product-zx7-speaker/mobile/image-gallery-1.jpg';
-import ZX7GalleryImage2Mobile from '../public/assets/product-zx7-speaker/mobile/image-gallery-2.jpg';
-import ZX7GalleryImage3Mobile from '../public/assets/product-zx7-speaker/mobile/image-gallery-3.jpg';
+import ZX7GalleryImage1Mobile from '../public/assets/product-zx7-speaker/mobile/image-gallery-1.jpg'
+import ZX7GalleryImage2Mobile from '../public/assets/product-zx7-speaker/mobile/image-gallery-2.jpg'
+import ZX7GalleryImage3Mobile from '../public/assets/product-zx7-speaker/mobile/image-gallery-3.jpg'
 
 //Earphones
-import YX1 from '../public/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg';
-import YX1Tablet from "../public/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg";
-import YX1Desktop from "../public/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg";
+import YX1 from '../public/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg'
+import YX1Tablet from '../public/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg'
+import YX1Desktop from '../public/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg'
 
 // YX
-import YXGalleryImage1Mobile from '../public/assets/product-yx1-earphones/mobile/image-gallery-1.jpg';
-import YXGalleryImage2Mobile from '../public/assets/product-yx1-earphones/mobile/image-gallery-2.jpg';
-import YXGalleryImage3Mobile from '../public/assets/product-yx1-earphones/mobile/image-gallery-3.jpg';
+import YXGalleryImage1Mobile from '../public/assets/product-yx1-earphones/mobile/image-gallery-1.jpg'
+import YXGalleryImage2Mobile from '../public/assets/product-yx1-earphones/mobile/image-gallery-2.jpg'
+import YXGalleryImage3Mobile from '../public/assets/product-yx1-earphones/mobile/image-gallery-3.jpg'
 
-import { IndividualProduct } from './types';
+import { IndividualProduct } from './types'
 
 export const links = [
   {
@@ -103,7 +103,7 @@ export const links = [
     hash: '#earphones',
     path: '/earphones',
   },
-] as const;
+] as const
 
 export const secondayNavLinks = [
   {
@@ -121,7 +121,7 @@ export const secondayNavLinks = [
     url: '/earphones',
     imgpath: earphonesThumb,
   },
-] as const;
+] as const
 
 export const HeadphonesPage = [
   {
@@ -131,8 +131,9 @@ export const HeadphonesPage = [
     link: '/products/xx99-2',
     mobile: XX99MARKII,
     tablet: XX99MARKIITablet,
-    desktop:XX99MARKIIDesktop,
-    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
+    desktop: XX99MARKIIDesktop,
+    className:
+      'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center',
   },
   {
     type: '',
@@ -141,8 +142,9 @@ export const HeadphonesPage = [
     link: '/products/xx99-1',
     mobile: XX99MARKI,
     tablet: XX99MARKITablet,
-    desktop:XX99MARKIDesktop,
-    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
+    desktop: XX99MARKIDesktop,
+    className:
+      'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center',
   },
   {
     type: '',
@@ -151,10 +153,11 @@ export const HeadphonesPage = [
     link: '/products/xx59',
     mobile: XX59,
     tablet: XX59Tablet,
-    desktop:XX59Desktop,
-    className: 'flex flex-col items-center justify-center gap-6 text-center text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
+    desktop: XX59Desktop,
+    className:
+      'flex flex-col items-center justify-center gap-6 text-center text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center',
   },
-] as const;
+] as const
 
 export const SpeakersPage = [
   {
@@ -164,8 +167,9 @@ export const SpeakersPage = [
     link: '/products/zx9',
     mobile: ZX9Mobile,
     tablet: ZX9Tablet,
-    desktop:ZX9Desktop,
-    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
+    desktop: ZX9Desktop,
+    className:
+      'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center',
   },
   {
     type: '',
@@ -174,10 +178,11 @@ export const SpeakersPage = [
     link: '/products/zx7',
     mobile: ZX7Mobile,
     tablet: ZX7Tablet,
-    desktop:ZX7Desktop,
-    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
+    desktop: ZX7Desktop,
+    className:
+      'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center',
   },
-] as const;
+] as const
 
 export const EarphonesPage = [
   {
@@ -187,10 +192,11 @@ export const EarphonesPage = [
     link: '/products/yx1',
     mobile: YX1,
     tablet: YX1Tablet,
-    desktop:YX1Desktop,
-    className: 'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center'
+    desktop: YX1Desktop,
+    className:
+      'flex flex-col items-center justify-center gap-6 text-center xl:items-start xl:text-left 2xl:items-center  2xl:text-center',
   },
-] as const;
+] as const
 
 export const XX99MARKIIProduct: IndividualProduct = {
   type: 'new product',
@@ -227,66 +233,61 @@ export const XX99MARKIIProduct: IndividualProduct = {
       name: 'mobile',
       images: [
         {
-          id:'xx99mark-1-mobile',
-          photo:      XX99MARKIIGalleryImage1Mobile,
-          className:'img_1 '
+          id: 'xx99mark2-1-mobile',
+          photo: XX99MARKIIGalleryImage1Mobile,
+          className: 'img_1 ',
         },
         {
-          id:'xx99mark-2-mobile',
+          id: 'xx99mark2-2-mobile',
           photo: XX99MARKIIGalleryImage2Mobile,
-          className:'img_2 '
+          className: 'img_2 ',
         },
         {
-          id:'xx99mark-3-mobile',
+          id: 'xx99mark2-3-mobile',
           photo: XX99MARKIIGalleryImage3Mobile,
-          className:'img_3  '
-        }
-       
-       
+          className: 'img_3  ',
+        },
       ],
-  
     },
     {
       name: 'tablet',
       images: [
         {
-          id:'xx99mark-2-tablet',
+          id: 'xx99mark2-1-tablet',
           photo: XX99MARKIIGalleryImage1Tablet,
-          className:''
+          className: '',
         },
         {
-          id:'xx99mark-2-tablet',
+          id: 'xx99mark2-2-tablet',
           photo: XX99MARKIIGalleryImage2Tablet,
-          className:''
+          className: '',
         },
         {
-          id:'xx99mark-2-tablet',
+          id: 'xx99mark2-3-tablet',
           photo: XX99MARKIIGalleryImage3Tablet,
-          className:'img_3 row-span-2 '
-        }
+          className: 'img_3 ',
+        },
       ],
- 
     },
     {
       name: 'desktop',
       images: [
         {
-          id:'xx99mark-2-desktop',
-          photo:     XX99MARKIIGalleryImage1Desktop,
-          className:'bg-orange'
+          id: 'xx99mark2-1-desktop',
+          photo: XX99MARKIIGalleryImage1Desktop,
+          className: '',
         },
         {
-          id:'xx99mark-2-desktop',
+          id: 'xx99mark2-2-desktop',
           photo: XX99MARKIIGalleryImage2Desktop,
-          className:'bg-orange'
+          className: ' ',
         },
         {
-          id:'xx99mark-2-desktop',
+          id: 'xx99mark2-3-desktop',
           photo: XX99MARKIIGalleryImage3Desktop,
-          className:'bg-orange row-span-2 '
-        }
+          className: '',
+        },
       ],
-   
     },
   ],
   products: [
@@ -306,7 +307,7 @@ export const XX99MARKIIProduct: IndividualProduct = {
       thumbImg: ZX9THUMB,
     },
   ],
-} as const;
+} as const
 
 export const XX99MARKIProduct: IndividualProduct = {
   type: 'new product',
@@ -340,67 +341,61 @@ export const XX99MARKIProduct: IndividualProduct = {
       name: 'mobile',
       images: [
         {
-          id:'xx99mark-1-mobile',
-          photo:     XX99MARKIGalleryImage1Mobile,
-          className:''
+          id: 'xx99mark-1-mobile',
+          photo: XX99MARKIGalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'xx99mark-2-mobile',
+          id: 'xx99mark-2-mobile',
           photo: XX99MARKIGalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx99mark-3-mobile',
-          photo:     XX99MARKIGalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
-       
-       
-      
+          id: 'xx99mark-3-mobile',
+          photo: XX99MARKIGalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-   
     },
     {
       name: 'tablet',
       images: [
         {
-          id:'xx99mark-1-tablet',
-          photo:     XX99MARKIGalleryImage1Mobile,
-          className:''
+          id: 'xx99mark-1-tablet',
+          photo: XX99MARKIGalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'xx99mark-2-tablet',
+          id: 'xx99mark-2-tablet',
           photo: XX99MARKIGalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx99mark-3-tablet',
-          photo:     XX99MARKIGalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'xx99mark-3-tablet',
+          photo: XX99MARKIGalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-  
     },
     {
       name: 'desktop',
       images: [
         {
-          id:'xx99mark-1-desktop',
-          photo:     XX99MARKIGalleryImage1Mobile,
-          className:''
+          id: 'xx99mark-1-desktop',
+          photo: XX99MARKIGalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'xx99mark-2-desktop',
+          id: 'xx99mark-2-desktop',
           photo: XX99MARKIGalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx99mark-3-desktop',
-          photo:     XX99MARKIGalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'xx99mark-3-desktop',
+          photo: XX99MARKIGalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-    
     },
   ],
   products: [
@@ -420,7 +415,7 @@ export const XX99MARKIProduct: IndividualProduct = {
       thumbImg: ZX9THUMB,
     },
   ],
-} as const;
+} as const
 
 export const XX59Product: IndividualProduct = {
   type: 'new product',
@@ -453,64 +448,61 @@ export const XX59Product: IndividualProduct = {
       name: 'mobile',
       images: [
         {
-          id:'xx59-1-mobile',
-          photo:    XX59GalleryImage1Mobile,
-          className:''
+          id: 'xx59-1-mobile',
+          photo: XX59GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'xx59-2-mobile',
+          id: 'xx59-2-mobile',
           photo: XX59GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx59-3-mobile',
-          photo:    XX59GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'xx59-3-mobile',
+          photo: XX59GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-   
     },
     {
       name: 'tablet',
       images: [
         {
-          id:'xx59-1-tablet',
-          photo:    XX59GalleryImage1Mobile,
-          className:''
+          id: 'xx59-1-tablet',
+          photo: XX59GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'xx59-2-tablet',
+          id: 'xx59-2-tablet',
           photo: XX59GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx59-3-tablet',
-          photo:    XX59GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'xx59-3-tablet',
+          photo: XX59GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-
     },
     {
       name: 'desktop',
       images: [
         {
-          id:'xx59-1-desktop',
+          id: 'xx59-1-desktop',
           photo: XX59GalleryImage1Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx59-2-desktop',
+          id: 'xx59-2-desktop',
           photo: XX59GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'xx59-3-desktop',
+          id: 'xx59-3-desktop',
           photo: XX59GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          className: 'img_3 row-span-2 ',
+        },
       ],
-  
     },
   ],
   products: [
@@ -530,7 +522,7 @@ export const XX59Product: IndividualProduct = {
       thumbImg: ZX9THUMB,
     },
   ],
-} as const;
+} as const
 
 export const ZX9Product: IndividualProduct = {
   type: 'new product',
@@ -567,69 +559,61 @@ export const ZX9Product: IndividualProduct = {
       name: 'mobile',
       images: [
         {
-          id:'zx9-1-mobile',
-          photo:   ZX9GalleryImage1Mobile,
-          className:''
+          id: 'zx9-1-mobile',
+          photo: ZX9GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'zx9-2-mobile',
+          id: 'zx9-2-mobile',
           photo: ZX9GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'zx9-3-mobile',
-          photo:   ZX9GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
-       
-       
-       
+          id: 'zx9-3-mobile',
+          photo: ZX9GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-  
     },
     {
       name: 'tablet',
       images: [
         {
-          id:'zx9-1-tablet',
-          photo:   ZX9GalleryImage1Mobile,
-          className:''
+          id: 'zx9-1-tablet',
+          photo: ZX9GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'zx9-2-tablet',
+          id: 'zx9-2-tablet',
           photo: ZX9GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'zx9-3-tablet',
-          photo:   ZX9GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
-       
+          id: 'zx9-3-tablet',
+          photo: ZX9GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
- 
     },
     {
       name: 'desktop',
       images: [
         {
-          id:'zx9-1-desktop',
-          photo:   ZX9GalleryImage1Mobile,
-          className:''
+          id: 'zx9-1-desktop',
+          photo: ZX9GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'zx9-2-desktop',
+          id: 'zx9-2-desktop',
           photo: ZX9GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'zx9-3-desktop',
-          photo:   ZX9GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
-       
+          id: 'zx9-3-desktop',
+          photo: ZX9GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-    
     },
   ],
   products: [
@@ -649,7 +633,7 @@ export const ZX9Product: IndividualProduct = {
       thumbImg: XX59THUMB,
     },
   ],
-} as const;
+} as const
 
 export const ZX7Product: IndividualProduct = {
   type: 'new product',
@@ -685,66 +669,62 @@ export const ZX7Product: IndividualProduct = {
     {
       name: 'mobile',
       images: [
-  
-          {
-            id:'zx7-1-mobile',
-            photo:  ZX7GalleryImage1Mobile,
-            className:''
-          },
-          {
-            id:'zx7-2-mobile',
-            photo: ZX7GalleryImage2Mobile,
-            className:''
-          },
-          {
-            id:'zx7-3-mobile',
-            photo:  ZX7GalleryImage3Mobile,
-            className:'img_3 row-span-2 '
-          }
-        ],
-  
+        {
+          id: 'zx7-1-mobile',
+          photo: ZX7GalleryImage1Mobile,
+          className: '',
+        },
+        {
+          id: 'zx7-2-mobile',
+          photo: ZX7GalleryImage2Mobile,
+          className: '',
+        },
+        {
+          id: 'zx7-3-mobile',
+          photo: ZX7GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
+      ],
     },
     {
       name: 'tablet',
       images: [
         {
-          id:'zx7-1-tablet',
-          photo:  ZX7GalleryImage1Mobile,
-          className:''
+          id: 'zx7-1-tablet',
+          photo: ZX7GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'zx7-2-tablet',
+          id: 'zx7-2-tablet',
           photo: ZX7GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'zx7-3-tablet',
-          photo:  ZX7GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'zx7-3-tablet',
+          photo: ZX7GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-   
     },
     {
       name: 'desktop',
       images: [
         {
-          id:'zx7-1-desktop',
-          photo:  ZX7GalleryImage1Mobile,
-          className:''
+          id: 'zx7-1-desktop',
+          photo: ZX7GalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'zx7-2-desktop',
+          id: 'zx7-2-desktop',
           photo: ZX7GalleryImage2Mobile,
-          className:''
+          className: '',
         },
         {
-          id:'zx7-3-desktop',
-          photo:  ZX7GalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'zx7-3-desktop',
+          photo: ZX7GalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-    
     },
   ],
   products: [
@@ -764,7 +744,7 @@ export const ZX7Product: IndividualProduct = {
       thumbImg: ZX9THUMB,
     },
   ],
-} as const;
+} as const
 
 export const YXProduct: IndividualProduct = {
   type: 'new product',
@@ -801,64 +781,61 @@ export const YXProduct: IndividualProduct = {
       name: 'mobile',
       images: [
         {
-          id:'yx-1-mobile',
-          photo:YXGalleryImage1Mobile,
-          className:''
+          id: 'yx-1-mobile',
+          photo: YXGalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'yx-2-mobile',
-          photo:YXGalleryImage2Mobile,
-          className:''
+          id: 'yx-2-mobile',
+          photo: YXGalleryImage2Mobile,
+          className: '',
         },
         {
-          id:'yx-3-mobile',
-          photo:YXGalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'yx-3-mobile',
+          photo: YXGalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-  
     },
     {
       name: 'tablet',
       images: [
         {
-          id:'yx-1-tablet',
-          photo:YXGalleryImage1Mobile,
-          className:''
+          id: 'yx-1-tablet',
+          photo: YXGalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'yx-2-tablet',
-          photo:YXGalleryImage2Mobile,
-          className:''
+          id: 'yx-2-tablet',
+          photo: YXGalleryImage2Mobile,
+          className: '',
         },
         {
-          id:'yx-3-tablet',
-          photo:YXGalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'yx-3-tablet',
+          photo: YXGalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-  
     },
     {
       name: 'desktop',
       images: [
         {
-          id:'yx-1-desktop',
-          photo:YXGalleryImage1Mobile,
-          className:''
+          id: 'yx-1-desktop',
+          photo: YXGalleryImage1Mobile,
+          className: '',
         },
         {
-          id:'yx-2-desktop',
-          photo:YXGalleryImage2Mobile,
-          className:''
+          id: 'yx-2-desktop',
+          photo: YXGalleryImage2Mobile,
+          className: '',
         },
         {
-          id:'yx-3-desktop',
-          photo:YXGalleryImage3Mobile,
-          className:'img_3 row-span-2 '
-        }
+          id: 'yx-3-desktop',
+          photo: YXGalleryImage3Mobile,
+          className: 'img_3 row-span-2 ',
+        },
       ],
-  
     },
   ],
 
@@ -879,4 +856,4 @@ export const YXProduct: IndividualProduct = {
       thumbImg: ZX9THUMB,
     },
   ],
-} as const;
+} as const

@@ -1,18 +1,14 @@
-'use client';
-import React from 'react';
-import FooterImg from '../public/assets/shared/mobile/image-best-gear.jpg';
-import FooterImgTablet from '../public/assets/shared/tablet/image-best-gear.jpg';
-import FooterImgDesktop from '../public/assets/shared/desktop/image-best-gear.jpg';
-import Image from 'next/image';
-import Link from 'next/link';
-import { ImFacebook2 } from 'react-icons/im';
-import { FaTwitter } from 'react-icons/fa6';
-import { FaInstagram } from 'react-icons/fa';
-import { useMainContextProvider } from '@/context/main-context';
-import { clsx } from 'clsx';
+import React from 'react'
+import FooterImg from '../public/assets/shared/mobile/image-best-gear.jpg'
+import FooterImgTablet from '../public/assets/shared/tablet/image-best-gear.jpg'
+import FooterImgDesktop from '../public/assets/shared/desktop/image-best-gear.jpg'
+import Image from 'next/image'
+import Link from 'next/link'
+import { ImFacebook2 } from 'react-icons/im'
+import { FaTwitter } from 'react-icons/fa6'
+import { FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
-  const { isOpen, cartIsOpen } = useMainContextProvider();
   return (
     <div className='mt-[7.5rem] md:mt-[6rem]'>
       <section className='px-6 text-center md:px-10 md:flex  lg:px-40 xl:px-32  2xl:px-80 flex flex-col lg:flex-row-reverse lg:mb-52 lg:flex lg:justify-between'>
@@ -50,26 +46,35 @@ const Footer = () => {
             make Audiophile the best place to buy your portable audio equipment.
           </p>
         </article>
-
         <div />
       </section>
 
       <div className='mt-[7.5rem] md:mt-[6rem] px-6 bg-black text-white flex flex-col justify-center gap-12 items-center md:justify-start md:items-start md:px-10 lg:px-40  xl:px-32 2xl:px-80 lg:flex-row lg:flex-wrap'>
         <div className='w-[100px] h-[5px] bg-orange'></div>
         <div className='lg:flex lg:justify-between w-full 2xl:flex-col 2xl:gap-5 '>
-          <h2 className='text-white font-bold text-2xl text-center md:text-left '>audiophile</h2>
+          <h2 className='text-white font-bold text-2xl text-center md:text-left '>
+            audiophile
+          </h2>
           <ul className='uppercase text-center flex flex-col gap-4 tracking-widest font-semibold mt-7 md:flex-row md:pt-8 lg:pt-0'>
             <li>
-              <Link href={'/'} className='hover:text-orange'>home</Link>
+              <Link href={'/'} className='hover:text-orange'>
+                home
+              </Link>
             </li>
             <li>
-              <Link href={'/headphones'} className='hover:text-orange'>headphones</Link>
+              <Link href={'/headphones'} className='hover:text-orange'>
+                headphones
+              </Link>
             </li>
             <li>
-              <Link href={'/speakers'} className='hover:text-orange'>speakers</Link>
+              <Link href={'/speakers'} className='hover:text-orange'>
+                speakers
+              </Link>
             </li>
             <li>
-              <Link href={'/earphones'} className='hover:text-orange'>earphones</Link>
+              <Link href={'/earphones'} className='hover:text-orange'>
+                earphones
+              </Link>
             </li>
           </ul>
         </div>
@@ -88,17 +93,15 @@ const Footer = () => {
             </p>
           </div>
 
-     
-            <div className='flex gap-4 mt-7 text-2xl pb-9 lg:items-center lg:pb-0 2xl:mt-0 2xl:mb-8 '>
-              <ImFacebook2  className='hover:text-orange cursor-pointer'/>
-              <FaTwitter  className='hover:text-orange cursor-pointer'/>
-              <FaInstagram className='hover:text-orange cursor-pointer' />
-            </div>
-        
+          <div className='flex gap-4 mt-7 text-2xl pb-9 lg:items-center lg:pb-0 2xl:mt-0 2xl:mb-8 '>
+            <ImFacebook2 className='hover:text-orange cursor-pointer' />
+            <FaTwitter className='hover:text-orange cursor-pointer' />
+            <FaInstagram className='hover:text-orange cursor-pointer' />
+          </div>
         </section>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,12 +1,12 @@
-'use client';
-import React from 'react';
-import { useRouter } from 'next/navigation';
-import CartThumb from '@/public/assets/cart/image-xx99-mark-one-headphones.jpg';
-import Image from 'next/image';
-import { IoCheckmarkSharp } from 'react-icons/io5';
+'use client'
+import React from 'react'
+import { useRouter } from 'next/navigation'
+import CartThumb from '@/public/assets/cart/image-xx99-mark-one-headphones.jpg'
+import Image from 'next/image'
+import { IoCheckmarkSharp } from 'react-icons/io5'
 
 const Checkout = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <div className='px-6 2xl:px-80'>
@@ -348,7 +348,7 @@ const Checkout = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Checkout;
+export default Checkout

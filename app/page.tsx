@@ -1,27 +1,30 @@
-'use client';
-import { SecondaryNavigation } from '@/components/secondary-navigation';
-import { FaGithub } from 'react-icons/fa6';
-import bgImg from '@/public/home/main.png';
-import bgTablet from '@/public/assets/home/tablet/image-header.jpg';
-import bgDesktop from '@/public/assets/home/desktop/image-hero.jpg';
-import Image from 'next/image';
-import Link from 'next/link';
-import ZX9 from '../public/assets/home/mobile/image-speaker-zx9.png';
-import YX from '../public/assets/home/mobile/image-earphones-yx1.jpg';
-import ZX9Tablet from '@/public/assets/home/tablet/image-speaker-zx9.png';
-import ZX9Desktop from '@/public/assets/home/mobile/image-speaker-zx9.png';
+'use client'
+import { SecondaryNavigation } from '@/components/secondary-navigation'
+import { FaGithub } from 'react-icons/fa6'
+import bgTablet from '@/public/assets/home/tablet/image-header.jpg'
+import bgDesktop from '@/public/assets/home/desktop/image-hero.jpg'
+import Image from 'next/image'
+import Link from 'next/link'
+import ZX9 from '../public/assets/home/mobile/image-speaker-zx9.png'
+import YX from '../public/assets/home/mobile/image-earphones-yx1.jpg'
+import ZX9Tablet from '@/public/assets/home/tablet/image-speaker-zx9.png'
+import ZX9Desktop from '@/public/assets/home/mobile/image-speaker-zx9.png'
 
-import { useMainContextProvider } from '@/context/main-context';
-import clsx from 'clsx';
+import { useMainContextProvider } from '@/context/main-context'
+import clsx from 'clsx'
 
 export default function Home() {
-  const { isOpen, cartIsOpen } = useMainContextProvider();
+  const { isOpen, cartIsOpen } = useMainContextProvider()
 
   return (
-    <> 
-    <a className=' text-orange fixed z-[9999] bottom-0 text-4xl  right-0 m-5 cursor-pointer transition-all hover:text-6xl text-center' target='_blank' href='https://github.com/IgorStojadinovic/next-e-commerce'>
-      <FaGithub/>
-    </a>
+    <>
+      <a
+        className=' text-orange fixed z-[9999] bottom-0 text-4xl  right-0 m-5 cursor-pointer transition-all hover:text-6xl text-center'
+        target='_blank'
+        href='https://github.com/IgorStojadinovic/next-e-commerce'
+      >
+        <FaGithub />
+      </a>
 
       <div
         className={clsx(
@@ -55,8 +58,7 @@ export default function Home() {
             className=' hidden lg:flex h-full w-full object-cover '
           />
         </div>
-     
-    
+
         <div className='text-white  text-center flex flex-col items-center justify-center h-full mb-[7rem] md:pt-0 md:px-24 lg:w-5/12 lg:items-start  2xl:px-0  '>
           <span className='text-zinc-400 uppercase tracking-[0.8rem] font-light md:pb-6'>
             {' '}
@@ -76,7 +78,6 @@ export default function Home() {
             See Product
           </Link>
         </div>
-        
       </main>
       <div className='px-6  z-50 md:py-24 md:px-10 lg:px-40 2xl:px-80 '>
         <SecondaryNavigation />
@@ -182,5 +183,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  );
+  )
 }
