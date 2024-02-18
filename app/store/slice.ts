@@ -1,19 +1,16 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
-export interface CounterState {
-  cart: []
+export type Item = {
+  name: string
+  total: number
+  defaultPrice: number
   quantity: number
+  itemKey: string
 }
 
-export interface ActionTypes {
-  payload: {
-    name: string
-    total: number
-    defaultPrice: number
-    quantity: number
-    itemKey: string
-  }
-  type: string
+export type CounterState = {
+  cart: Item[]
+  quantity: number
 }
 
 const initialState: CounterState = {
@@ -26,29 +23,17 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
       state.quantity += 1
     },
     decrement: (state) => {
-      if (state.quantity <= 0) {
-        state.quantity = 0
-      } else {
-        state.quantity -= 1
-      }
+      state.quantity = Math.max(0, state.quantity - 1)
     },
-    addItemToCart: (state, action) => {
-      //Check if item exists in the cart
+    addItemToCart: (state, action: PayloadAction<Item>) => {
       const existingItemIndex = state.cart.findIndex(
         (cartItem) => cartItem.name === action.payload.name
       )
 
-      //If item exists update total price and quantity of that item obj
       if (existingItemIndex !== -1) {
-        console.log('That item already exists!')
-
         const updatedCart = [...state.cart]
         updatedCart[existingItemIndex] = {
           ...state.cart[existingItemIndex],
