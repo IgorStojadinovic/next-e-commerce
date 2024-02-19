@@ -55,8 +55,29 @@ export type IndividualProduct = {
   descOne: string
   descTwo: string
   thumbImg: StaticImageData
-  price: string
+  price: number
   box: BoxItem[]
   gallery: GalleryObj[]
   products: ProductsSuggestions[]
+}
+
+export type DispatchItem = {
+  name: string
+  total: number
+  defaultPrice: number
+  quantity: number
+  itemKey: string
+}
+
+export type CartItem = {
+  name: string
+  total: number
+  defaultPrice: number
+  quantity: number
+  itemKey: string
+}
+
+export type CounterState = {
+  cart: CartItem[]
+  quantity: number
 }

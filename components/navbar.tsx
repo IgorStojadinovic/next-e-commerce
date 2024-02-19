@@ -1,17 +1,22 @@
 'use client'
 import React from 'react'
 import { IoMenuSharp, IoCartOutline } from 'react-icons/io5'
-import { IoIosClose } from 'react-icons/io'
 import { links } from '@/lib/data'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { MobileNavigation } from './secondary-navigation'
 import { useMainContextProvider } from '@/context/main-context'
 import { usePathname } from 'next/navigation'
+import { useSelector } from 'react-redux'
+import type { RootState } from '../app/store/store'
+import Cart from './cart'
 import clsx from 'clsx'
+
 const Navbar = (): React.JSX.Element => {
   const { toggleMenu, toggleCart, isOpen, cartIsOpen } =
     useMainContextProvider()
+  const cart = useSelector((state: RootState) => state.cart.cart)
+
   const pathname = usePathname()
 
   return (
@@ -34,12 +39,21 @@ const Navbar = (): React.JSX.Element => {
               </li>
             ))}
           </ul>
-          <IoCartOutline
-            className='h-[2rem] w-[2rem] z-40 text-white'
-            onClick={() => {
-              toggleCart()
-            }}
-          />
+          <div className='relative'>
+            {cart.length > 0 && (
+              <span className='absolute right-0 flex h-3 w-3'>
+                <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange opacity-75'></span>
+                <span className='relative inline-flex rounded-full h-3 w-3 bg-orange '></span>
+              </span>
+            )}
+
+            <IoCartOutline
+              className='h-[2rem] w-[2rem] z-40 text-white hover:text-orange hover:cursor-pointer'
+              onClick={() => {
+                toggleCart()
+              }}
+            />
+          </div>
         </div>
         <div className='h-[1px] w-full bg-white/50'></div>
       </nav>
@@ -64,25 +78,76 @@ const Navbar = (): React.JSX.Element => {
             audiophile
           </a>
           <ul className='text-white uppercase flex justify-between 2xl:gap-10 xl:gap-7 lg:gap-4 tracking-widest font-bold'>
-            <li className='hover:text-orange'>
+            <li
+              className={clsx('hover:text-orange', {
+                'text-orange': pathname === '/',
+              })}
+            >
               <Link href={'/'}>Home</Link>
             </li>
-            <li className='hover:text-orange'>
+            <li
+              className={clsx(
+                'hover:text-orange',
+                {
+                  'text-orange': pathname === '/headphones',
+                },
+                {
+                  'text-orange': pathname === '/products/xx99-2',
+                },
+                {
+                  'text-orange': pathname === '/products/xx99-1',
+                },
+                {
+                  'text-orange': pathname === '/products/xx59',
+                }
+              )}
+            >
               <Link href={'/headphones'}>Headphones</Link>
             </li>
-            <li className='hover:text-orange'>
+            <li
+              className={clsx(
+                'hover:text-orange',
+                {
+                  'text-orange': pathname === '/speakers',
+                },
+                {
+                  'text-orange': pathname === '/products/zx9',
+                },
+                {
+                  'text-orange': pathname === '/products/zx7',
+                }
+              )}
+            >
               <Link href={'/speakers'}>Speakers</Link>
             </li>
-            <li className='hover:text-orange'>
+            <li
+              className={clsx(
+                'hover:text-orange',
+                {
+                  'text-orange': pathname === '/earphones',
+                },
+                {
+                  'text-orange': pathname === '/products/yx1',
+                }
+              )}
+            >
               <Link href={'/earphones'}>Earphones</Link>
             </li>
           </ul>
-          <IoCartOutline
-            className='h-[2rem] w-[2rem] z-40 text-white hover:text-orange hover:cursor-pointer'
-            onClick={() => {
-              toggleCart()
-            }}
-          />
+          <div className='relative'>
+            {cart.length > 0 && (
+              <span className='absolute right-0 flex h-3 w-3'>
+                <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-orange opacity-75'></span>
+                <span className='relative inline-flex rounded-full h-3 w-3 bg-orange '></span>
+              </span>
+            )}
+            <IoCartOutline
+              className='h-[2rem] w-[2rem] z-40 text-white hover:text-orange hover:cursor-pointer'
+              onClick={() => {
+                toggleCart()
+              }}
+            />
+          </div>
         </div>
       </nav>
 
@@ -112,83 +177,7 @@ const Navbar = (): React.JSX.Element => {
         </motion.div>
       )}
 
-      {cartIsOpen ? (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            type: 'keyframes',
-            duration: '0.2',
-          }}
-          className='absolute z-40 m-6 rounded-lg left-0 right-0 px-7 py-9 bg-white shadow-lg flex flex-col justify-center md:w-[500px] md:left-[30%] 2xl:w-[500px] 2xl:left-[57%] 2xl:top-40'
-        >
-          {' '}
-          <IoIosClose
-            className='text-2xl self-end mb-4 cursor-pointer'
-            onClick={() => {
-              toggleCart()
-            }}
-          />
-          <div className='flex justify-between '>
-            <h2 className='uppercase font-bold'>Cart</h2>
-            <button
-              className='underline'
-              onClick={() => {
-                toggleCart()
-              }}
-            >
-              Remove all
-            </button>
-          </div>
-          <div className='h-[200px]'></div>
-          <div className='flex justify-between'>
-            <p className='uppercase font-bold'>Total</p>
-            <p className='uppercase font-bold'>220</p>
-          </div>
-          <Link
-            href={'/checkout'}
-            onClick={() => {
-              toggleCart()
-            }}
-            className='bg-btn-orange p-4 text-center mt-6 text-white uppercase text-sm font-semibold tracking-widest z-40'
-          >
-            Checkout
-          </Link>
-        </motion.div>
-      ) : (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0 }}
-          transition={{
-            type: 'keyframes',
-            duration: '0.2',
-          }}
-          className='absolute  -z-50 m-6 rounded-lg left-0 right-0 px-7 py-9 bg-white shadow-lg flex flex-col justify-center md:w-[500px] md:left-[30%] 2xl:w-[500px] 2xl:left-[57%] 2xl:top-40'
-        >
-          <IoIosClose
-            className='text-2xl self-end mb-4 cursor-pointer'
-            onClick={() => {
-              toggleCart()
-            }}
-          />
-
-          <div className='flex justify-between '>
-            <h2 className='uppercase font-bold'>Cart</h2>
-            <button className='underline'>Remove all</button>
-          </div>
-          <div className='h-[200px]'></div>
-          <div className='flex justify-between'>
-            <p className='uppercase font-bold'>Total</p>
-            <p className='uppercase font-bold'>220</p>
-          </div>
-          <Link
-            href={'/checkout'}
-            className='bg-btn-orange p-4 text-center mt-6 text-white uppercase text-sm font-semibold tracking-widest'
-          >
-            Checkout
-          </Link>
-        </motion.div>
-      )}
+      {cartIsOpen && <Cart />}
     </div>
   )
 }

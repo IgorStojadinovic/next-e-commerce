@@ -200,7 +200,7 @@ export const EarphonesPage = [
 
 export const XX99MARKIIProduct: IndividualProduct = {
   type: 'new product',
-  name: 'xx99 mark II headphones',
+  name: 'xx99 mark II',
   maindesc:
     'The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.',
   descOne:
@@ -208,7 +208,7 @@ export const XX99MARKIIProduct: IndividualProduct = {
   descTwo:
     'The advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.',
   thumbImg: XX99MARKII,
-  price: '$ 2,999',
+  price: 1800,
   box: [
     { quantity: '1x', name: 'Headphone Unit' },
     {
@@ -311,7 +311,7 @@ export const XX99MARKIIProduct: IndividualProduct = {
 
 export const XX99MARKIProduct: IndividualProduct = {
   type: 'new product',
-  name: 'xx99 mark I headphones',
+  name: 'xx99 mark I',
   maindesc:
     'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
   descOne:
@@ -320,7 +320,7 @@ export const XX99MARKIProduct: IndividualProduct = {
     'From the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is included with a balanced gold connector.',
 
   thumbImg: XX99MARKI,
-  price: '$ 2,999',
+  price: 750,
   box: [
     { quantity: '1x', name: 'Headphone Unit' },
     {
@@ -419,7 +419,7 @@ export const XX99MARKIProduct: IndividualProduct = {
 
 export const XX59Product: IndividualProduct = {
   type: 'new product',
-  name: 'xx59 headphones',
+  name: 'xx59',
   maindesc:
     'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
   descOne:
@@ -427,7 +427,7 @@ export const XX59Product: IndividualProduct = {
   descTwo:
     'More than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the  XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.',
   thumbImg: XX59,
-  price: '$ 2,999',
+  price: 500,
   box: [
     { quantity: '1x', name: 'Headphone Unit' },
     {
@@ -526,7 +526,7 @@ export const XX59Product: IndividualProduct = {
 
 export const ZX9Product: IndividualProduct = {
   type: 'new product',
-  name: 'zx9 speaker',
+  name: 'zx9',
   maindesc:
     'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.',
   descOne:
@@ -534,7 +534,7 @@ export const ZX9Product: IndividualProduct = {
   descTwo:
     'Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.',
   thumbImg: ZX9,
-  price: '$ 4,500',
+  price: 4500,
   box: [
     { quantity: '2x', name: 'Speaker Unit' },
     {
@@ -618,7 +618,7 @@ export const ZX9Product: IndividualProduct = {
   ],
   products: [
     {
-      name: 'zx7 speaker',
+      name: 'zx7',
       link: 'zx7',
       thumbImg: ZX7THUMB,
     },
@@ -637,7 +637,7 @@ export const ZX9Product: IndividualProduct = {
 
 export const ZX7Product: IndividualProduct = {
   type: 'new product',
-  name: 'zx7 speaker',
+  name: 'zx7',
   maindesc:
     'Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.',
   descOne:
@@ -645,7 +645,7 @@ export const ZX7Product: IndividualProduct = {
   descTwo:
     'Discover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.',
   thumbImg: ZX7,
-  price: '$ 3,500',
+  price: 3500,
   box: [
     { quantity: '2x', name: 'Speaker Unit' },
     {
@@ -748,7 +748,7 @@ export const ZX7Product: IndividualProduct = {
 
 export const YXProduct: IndividualProduct = {
   type: 'new product',
-  name: 'yx1 wireless earphones',
+  name: 'yx1',
   maindesc:
     'Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.',
   descOne:
@@ -756,7 +756,7 @@ export const YXProduct: IndividualProduct = {
   descTwo:
     'The YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.',
   thumbImg: YX1Desktop,
-  price: '$ 599',
+  price: 599,
   box: [
     { quantity: '2x', name: 'Earphone Unit' },
     {

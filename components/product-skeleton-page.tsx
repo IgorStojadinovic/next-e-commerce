@@ -10,16 +10,8 @@ import { useMainContextProvider } from '@/context/main-context'
 import { FaGithub } from 'react-icons/fa6'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment, addItemToCart } from '../app/store/slice'
-import type { RootState } from '../app/store/store'
-
-type Item = {
-  name: string
-  total: number
-  defaultPrice: number
-  quantity: number
-  itemKey: string
-}
-
+import { RootState } from '../app/store/store'
+import { DispatchItem } from '../lib/types'
 const ProductSceleton = ({
   type,
   name,
@@ -40,10 +32,10 @@ const ProductSceleton = ({
 
   const addItem = (quantity: number) => {
     if (quantity) {
-      const item: Item = {
+      const item: DispatchItem = {
         name: name,
-        total: 2999 * quantity,
-        defaultPrice: 2999,
+        total: price * quantity,
+        defaultPrice: price,
         quantity: quantity,
         itemKey: name,
       }
@@ -86,13 +78,7 @@ const ProductSceleton = ({
         {/** */}
         <section className='flex flex-col justify-center items-center md:flex-row md:gap-5 lg:flex-row 2xl:gap-32 2xl:justify-center 2xl:items-center lg:gap-28 xl:gap-36'>
           <picture className='rounded-lg mb-8 lg:w-1/2 md:mb-0 md:w-1/2 w-full 2xl:h-[560px] '>
-            <Image
-              src={thumbImg}
-              alt={name}
-              quality={100}
-              className='h-full w-full '
-              loading='lazy'
-            />
+            <Image src={thumbImg} alt={name} quality={100} loading='lazy' />
           </picture>
 
           <div className='flex flex-col  gap-6  lg:w-1/2 2xl:gap-0 md:w-1/2'>
@@ -103,7 +89,7 @@ const ProductSceleton = ({
               {name}
             </h1>
             <p className='text-black/60 font-medium 2xl:2xl:my-8'>{maindesc}</p>
-            <p className='mb-10 font-bold'>{price}</p>
+            <p className='mb-10 font-bold'>${price}</p>
             <div className='flex justify-between gap-4'>
               <div className='flex items-center bg-light-gray/10 text-center justify-between  w-full uppercase text-sm font-semibold tracking-widest'>
                 <button
@@ -136,7 +122,7 @@ const ProductSceleton = ({
           </div>
         </section>
 
-        <div className='flex justify-between gap-40 mt-20 mb-6 xl:items-end lg:items-end'>
+        <div className='flex justify-between gap-40 mt-20 mb-6 xl:items-end lg:items-end 2xl:mt-32'>
           <h2 className='uppercase font-bold text-2xl tracking-wide mt-20 mb-6 2xl:m-0 2xl:text-4xl'>
             Features
           </h2>
