@@ -26,6 +26,9 @@ const Speakers = () => {
           className={clsx('', {
             'bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30 ':
               cartIsOpen,
+          },
+          {
+            'bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30 ': isOpen,
           })}
         ></div>
         <p className='bg-black text-white p-6 text-center uppercase font-bold tracking-widest 2xl:pb-9 border-none 2xl:text-3xl'>

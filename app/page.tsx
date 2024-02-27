@@ -32,7 +32,7 @@ export default function Home() {
               cartIsOpen,
           },
           {
-            'bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30': isOpen,
+            'bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30 2xl:hidden': isOpen,
           }
         )}
       ></div>
