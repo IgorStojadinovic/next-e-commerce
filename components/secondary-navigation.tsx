@@ -30,7 +30,7 @@ const SecondaryNavigation = () => {
 const MobileNavigation = () => {
   const { toggleMenu } = useMainContextProvider()
   return (
-    <nav className='px-6 py-12  bg-white '>
+    <nav className='px-6 py-12  bg-white lg:hidden 2xl:hidden '>
       <ul className='flex flex-col gap-8 items-center justify-center h-full  md:flex-row'>
         {secondayNavLinks.map((link) => (
           <MobileNavLinkComponent

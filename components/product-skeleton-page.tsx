@@ -27,7 +27,7 @@ const ProductSceleton = ({
   const router = useRouter()
   const { isOpen, cartIsOpen } = useMainContextProvider()
   const quantity = useSelector((state: RootState) => state.cart.quantity)
-  const cart = useSelector((state: RootState) => state.cart.cart)
+  //const cart = useSelector((state: RootState) => state.cart.cart)
   const dispatch = useDispatch()
 
   const addItem = (quantity: number) => {
@@ -43,7 +43,7 @@ const ProductSceleton = ({
       dispatch(addItemToCart(item))
     }
   }
-  console.log(cart)
+
   return (
     <>
       <a

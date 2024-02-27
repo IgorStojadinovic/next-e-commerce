@@ -1,17 +1,22 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { CartItem, CounterState } from '@/lib/types'
+import { getLocalStore } from 'next-persist'
 
 const initialState: CounterState = {
   cart: [],
   quantity: 0,
 }
 
+const persistedState = getLocalStore('cart', initialState)
+
 export const cartSlice = createSlice({
-  name: 'counter',
+  name: 'cart',
   initialState,
   reducers: {
     increment: (state) => {
       state.quantity += 1
+
+      console.log('persist', persistedState)
     },
     decrement: (state) => {
       state.quantity = Math.max(0, state.quantity - 1)
