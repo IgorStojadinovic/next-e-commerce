@@ -5,9 +5,6 @@ import { IoIosArrowForward } from "react-icons/io";
 import Link from "next/link";
 import Image from "next/image";
 import { useMainContextProvider } from "@/context/main-context";
-import { useSelector, useDispatch } from "react-redux";
-import { toggleMenu } from "@/app/store/slice";
-import type { RootState } from "../app/store/store";
 
 const SecondaryNavigation = () => {
   const { toggleMenu } = useMainContextProvider();

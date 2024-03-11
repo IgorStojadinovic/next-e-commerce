@@ -9,8 +9,7 @@ import ZX9 from "../public/assets/home/mobile/image-speaker-zx9.png";
 import YX from "../public/assets/home/mobile/image-earphones-yx1.jpg";
 import ZX9Tablet from "@/public/assets/home/tablet/image-speaker-zx9.png";
 import ZX9Desktop from "@/public/assets/home/mobile/image-speaker-zx9.png";
-import { useMainContextProvider } from "@/context/main-context";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import type { RootState } from "../app/store/store";
 
 import clsx from "clsx";

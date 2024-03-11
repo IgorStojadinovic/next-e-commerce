@@ -4,7 +4,6 @@ import { SpeakersPage } from "@/lib/data";
 import { SecondaryNavigation } from "@/components/secondary-navigation";
 import ProductContainer from "@/components/product-container";
 import { useRouter } from "next/navigation";
-import { useMainContextProvider } from "@/context/main-context";
 import clsx from "clsx";
 import { FaGithub } from "react-icons/fa6";
 import { useSelector } from "react-redux";

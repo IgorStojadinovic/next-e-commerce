@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
 import { SecondaryNavigation } from "./secondary-navigation";
-import { useMainContextProvider } from "@/context/main-context";
 import { FaGithub } from "react-icons/fa6";
 import { useSelector, useDispatch } from "react-redux";
 import { decrement, increment, addItemToCart } from "../app/store/slice";

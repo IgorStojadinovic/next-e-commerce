@@ -6,7 +6,6 @@ import {
   removeAll,
   toggleCart,
 } from "@/app/store/slice";
-import { useMainContextProvider } from "@/context/main-context";
 import { motion } from "framer-motion";
 import { IoIosClose } from "react-icons/io";
 import Link from "next/link";
