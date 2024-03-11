@@ -10,11 +10,15 @@ import YX from "../public/assets/home/mobile/image-earphones-yx1.jpg";
 import ZX9Tablet from "@/public/assets/home/tablet/image-speaker-zx9.png";
 import ZX9Desktop from "@/public/assets/home/mobile/image-speaker-zx9.png";
 import { useMainContextProvider } from "@/context/main-context";
+import { useSelector, useDispatch } from "react-redux";
+import type { RootState } from "../app/store/store";
 
 import clsx from "clsx";
 
 export default function Home() {
-  const { isOpen, cartIsOpen } = useMainContextProvider();
+  const isOpen = useSelector((state: RootState) => state.cart.isOpen);
+  const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
+
   return (
     <>
       <a
@@ -26,14 +30,13 @@ export default function Home() {
       </a>
       <div
         className={clsx(
-          "bg-transparent ",
+          "",
           {
             "bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30":
               cartIsOpen,
           },
           {
-            "bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30 2xl:hidden":
-              isOpen,
+            "bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30 ": isOpen,
           }
         )}
       ></div>

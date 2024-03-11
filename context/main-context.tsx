@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState, createContext, useContext } from "react";
 
 type MenuStatus = false | true;
@@ -29,10 +30,8 @@ export default function MainContextProvider({
   const toggleMenu = () => {
     if (isOpen) {
       setIsOpen((prev) => !prev);
-      window.localStorage.setItem("menuStatus", "closed");
     } else {
       setIsOpen((prev) => !prev);
-      window.localStorage.setItem("menuStatus", "open");
     }
   };
 
@@ -43,22 +42,6 @@ export default function MainContextProvider({
       setCartIsOpen((prev) => !prev);
     }
   };
-
-  useEffect(() => {
-    const localTheme = window.localStorage.getItem(
-      "menuStatus"
-    ) as LocalStorage | null;
-
-    if (!localTheme) {
-      window.localStorage.setItem("menuStatus", "closed");
-    }
-
-    if (localTheme === "closed") {
-      setIsOpen(false);
-    } else {
-      setIsOpen(true);
-    }
-  }, []);
 
   return (
     <MainContext.Provider

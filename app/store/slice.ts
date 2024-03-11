@@ -79,6 +79,18 @@ export const cartSlice = createSlice({
     removeAll: (state) => {
       state.cart = [];
     },
+    toggleCart: (state) => {
+      return {
+        ...state,
+        cartIsOpen: !state.cartIsOpen,
+      };
+    },
+    toggleMenu: (state) => {
+      return {
+        ...state,
+        isOpen: !state.isOpen,
+      };
+    },
   },
 });
 
@@ -89,8 +101,9 @@ export const {
   addQuantity,
   removeQuantity,
   removeAll,
+  toggleMenu,
+  toggleCart,
 } = cartSlice.actions;
 export const getValue = (state: CounterState) => state.quantity;
-export const getMenuStatus = (state: CounterState) => state.isOpen;
-export const getCartStatus = (state: CounterState) => state.cartIsOpen;
+export const isOpen = (state: CounterState) => state.isOpen;
 export default cartSlice.reducer;
