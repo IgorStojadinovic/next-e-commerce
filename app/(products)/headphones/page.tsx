@@ -4,7 +4,6 @@ import { HeadphonesPage } from "@/lib/data";
 import { FaGithub } from "react-icons/fa6";
 import ProductContainer from "@/components/product-container";
 import { SecondaryNavigation } from "@/components/secondary-navigation";
-import { useMainContextProvider } from "@/context/main-context";
 import { useRouter, usePathname } from "next/navigation";
 import { useSelector } from "react-redux";
 import type { RootState } from "../../../app/store/store";

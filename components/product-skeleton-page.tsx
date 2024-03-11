@@ -26,7 +26,6 @@ const ProductSceleton = ({
   const router = useRouter();
 
   const quantity = useSelector((state: RootState) => state.cart.quantity);
-  const cart = useSelector((state: RootState) => state.cart.cart);
   const isOpen = useSelector((state: RootState) => state.cart.isOpen);
   const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
   const dispatch = useDispatch();
