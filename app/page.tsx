@@ -26,7 +26,7 @@ export default function Home() {
       </a>
       <div
         className={clsx(
-          "",
+          "bg-transparent",
           {
             "bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-30":
               cartIsOpen,
