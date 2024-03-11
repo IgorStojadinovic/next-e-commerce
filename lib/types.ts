@@ -78,12 +78,6 @@ export type CartItem = {
 };
 
 type MenuStatus = false | true;
-type LocalStorage = string;
-type Cart = [];
-
-type MainContextProviderProps = {
-  children: React.ReactNode;
-};
 
 export type CounterState = {
   isOpen: MenuStatus;
