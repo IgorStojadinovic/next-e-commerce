@@ -1,6 +1,7 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {CartItem, CartState} from "@/lib/types";
 
+
 const initialState: CartState = {
     cart: [],
     quantity: 0,
@@ -105,6 +106,6 @@ export const {
     toggleMenu,
     toggleCart,
 } = cartSlice.actions;
-export const getValue = (state: CounterState) => state.quantity;
-export const isOpen = (state: CounterState) => state.isOpen;
+export const getValue = (state: CartState) => state.quantity;
+export const isOpen = (state: CartState) => state.isOpen;
 export default cartSlice.reducer;
