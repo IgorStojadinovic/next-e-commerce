@@ -2,7 +2,6 @@
 import {SecondaryNavigation} from "@/components/secondary-navigation";
 import {FaGithub} from "react-icons/fa6";
 import {useSelector} from "react-redux";
-import type {RootState} from "@/app/store/store";
 import bgTablet from "@/public/assets/home/tablet/image-header.jpg";
 import bgDesktop from "@/public/assets/home/desktop/image-hero.jpg";
 import Image from "next/image";
@@ -12,10 +11,13 @@ import ZX9Tablet from "@/public/assets/home/tablet/image-speaker-zx9.png";
 import ZX9Desktop from "@/public/assets/home/mobile/image-speaker-zx9.png";
 import clsx from "clsx";
 import Button from "@/components/button";
+import {getCartStatus,getMenuStatus} from "@/app/store/slice";
+
+
 
 export default function Home() {
-    const isOpen = useSelector((state: RootState) => state.cart.isOpen);
-    const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
+    const isOpen = useSelector(getMenuStatus);
+    const cartIsOpen = useSelector(getCartStatus);
 
     return (
         <main>

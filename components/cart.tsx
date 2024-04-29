@@ -9,15 +9,15 @@ import ZX7 from "../public/assets/cart/image-zx7-speaker.jpg";
 import clsx from "clsx";
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {addQuantity, removeAll, removeQuantity, toggleCart} from "@/app/store/slice";
+import {addQuantity, removeAll, removeQuantity, toggleCart,getCartItems,getCartStatus} from "@/app/store/slice";
 import {motion} from "framer-motion";
 import {IoIosClose} from "react-icons/io";
 import {DispatchItem} from "@/lib/types";
-import type {RootState} from "@/app/store/store";
+
 
 const Cart = () => {
-    const cart = useSelector((state: RootState) => state.cart.cart);
-    const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
+    const cart = useSelector(getCartItems);
+    const cartIsOpen = useSelector(getCartStatus);
     const [expandCart, setExpandCart] = useState(false);
     const dispatch = useDispatch();
 

@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {CartItem, CartState} from "@/lib/types";
-
+import {RootState} from "@/app/store/store";
 
 const initialState: CartState = {
     cart: [],
@@ -106,8 +106,8 @@ export const {
     toggleMenu,
     toggleCart,
 } = cartSlice.actions;
-export const getQuantity = (state: CartState) => state.quantity;
-export const getCart = (state: CartState) => state.cart;
-export const getMenuStatus = (state: CartState) => state.isOpen;
-export const getCartStatus = (state: CartState) => state.cartIsOpen;
+export const getQuantity = (state: RootState) => state.cart.quantity;
+export const getCartItems = (state: RootState) => state.cart.cart;
+export const getCartStatus = (state: RootState) => state.cart.cartIsOpen;
+export  const getMenuStatus = (state: RootState) => state.cart.isOpen;
 export default cartSlice.reducer;

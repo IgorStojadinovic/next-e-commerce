@@ -5,11 +5,17 @@ import {useRouter} from "next/navigation";
 import {SecondaryNavigation} from "./secondary-navigation";
 import {FaGithub} from "react-icons/fa6";
 import {useDispatch, useSelector} from "react-redux";
-import {addItemToCart, decrement, increment} from "@/app/store/slice";
-import {RootState} from "@/app/store/store";
+import {
+    addItemToCart,
+    decrement,
+    getCartStatus,
+    getMenuStatus,
+    getQuantity,
+    increment} from "@/app/store/slice";
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
+
 
 const ProductSceleton = ({
                              type,
@@ -25,9 +31,9 @@ const ProductSceleton = ({
                          }: IndividualProduct) => {
     const router = useRouter();
 
-    const quantity = useSelector((state: RootState) => state.cart.quantity);
-    const isOpen = useSelector((state: RootState) => state.cart.isOpen);
-    const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
+    const quantity = useSelector(getQuantity);
+    const isOpen = useSelector(getMenuStatus);
+    const cartIsOpen = useSelector(getCartStatus);
     const dispatch = useDispatch();
 
     const addItem = (quantity: number) => {

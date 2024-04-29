@@ -9,13 +9,14 @@ import {motion} from "framer-motion";
 import {MobileNavigation} from "./secondary-navigation";
 import {usePathname} from "next/navigation";
 import {useDispatch, useSelector} from "react-redux";
-import {toggleCart, toggleMenu} from "@/app/store/slice";
-import {RootState} from "@/app/store/store";
+import {toggleCart, toggleMenu,getCartStatus,getMenuStatus,getCartItems} from "@/app/store/slice";
+
+
 
 const Navbar = (): React.JSX.Element => {
-    const cart = useSelector((state: RootState) => state.cart.cart);
-    const isOpen = useSelector((state: RootState) => state.cart.isOpen);
-    const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
+    const cart = useSelector(getCartItems);
+    const isOpen = useSelector(getMenuStatus);
+    const cartIsOpen = useSelector(getCartStatus);
     const dispatch = useDispatch();
     const pathname = usePathname();
     return (
