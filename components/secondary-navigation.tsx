@@ -2,12 +2,12 @@ import React from "react";
 import {secondaryNavLinks} from "@/lib/data";
 import {SecondaryNavLinks} from "@/lib/types";
 import {IoIosArrowForward} from "react-icons/io";
+import {toggleMenu} from "@/app/store/slice";
 import Link from "next/link";
 import Image from "next/image";
-import {useMainContextProvider} from "@/context/main-context";
+
 
 const SecondaryNavigation = () => {
-    const {toggleMenu} = useMainContextProvider();
     return (
         <nav className="-z-10 pt-10 pb-[7.5rem] md:pt-0 md:pb-0">
             <ul className="flex flex-col gap-4 md:flex-row">
@@ -28,7 +28,7 @@ const SecondaryNavigation = () => {
 };
 
 const MobileNavigation = () => {
-    const {toggleMenu} = useMainContextProvider();
+    //const {toggleMenu} = useMainContextProvider();
     return (
         <nav className="px-6 py-12  bg-white lg:hidden 2xl:hidden ">
             <ul className="flex flex-col gap-8 items-center justify-center h-full  md:flex-row">
