@@ -10,7 +10,7 @@ import {MobileNavigation} from "./secondary-navigation";
 import {usePathname} from "next/navigation";
 import {useDispatch, useSelector} from "react-redux";
 import {toggleCart, toggleMenu} from "@/app/store/slice";
-import type {RootState} from "@/app/store/store";
+import {RootState} from "@/app/store/store";
 
 const Navbar = (): React.JSX.Element => {
     const cart = useSelector((state: RootState) => state.cart.cart);
@@ -18,7 +18,6 @@ const Navbar = (): React.JSX.Element => {
     const cartIsOpen = useSelector((state: RootState) => state.cart.cartIsOpen);
     const dispatch = useDispatch();
     const pathname = usePathname();
-
     return (
         <div className=" overflow-x-hidden">
             <nav
