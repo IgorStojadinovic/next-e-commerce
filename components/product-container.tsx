@@ -62,7 +62,7 @@ const ProductContainer = ({
         </p>
         <Link
           href={link}
-          className='bg-btn-orange p-4 w-[160px] h-[48px] flex justify-center items-center uppercase text-sm font-semibold tracking-widest text-white hover:bg-white border border-orange border-1 hover:text-orange '
+          className='bg-btn-orange p-4 w-[160px] h-[48px] flex justify-center items-center uppercase text-sm font-semibold tracking-widest text-white hover:bg-white border border-orange border-1 hover:text-orange transition-all duration-300 '
         >
           see product
         </Link>
