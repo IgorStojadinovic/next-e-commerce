@@ -79,7 +79,7 @@ export type CartItem = {
 
 type MenuStatus = false | true;
 
-export type CounterState = {
+export type CartState= {
   isOpen: MenuStatus;
   cartIsOpen: MenuStatus;
   cart: CartItem[];
