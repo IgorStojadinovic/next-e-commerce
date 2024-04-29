@@ -9,7 +9,7 @@ import ZX7 from "../public/assets/cart/image-zx7-speaker.jpg";
 import clsx from "clsx";
 import {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {addQuantity, removeAll, removeQuantity, toggleCart,} from "@/app/store/slice";
+import {addQuantity, removeAll, removeQuantity, toggleCart} from "@/app/store/slice";
 import {motion} from "framer-motion";
 import {IoIosClose} from "react-icons/io";
 import {DispatchItem} from "@/lib/types";
@@ -215,7 +215,7 @@ const Cart = () => {
                         <Link
                             href={"/checkout"}
                             onClick={() => {
-                                toggleCart();
+                                dispatch(toggleCart());
                             }}
                             className="bg-btn-orange hover:bg-btn-orange/80 p-4 text-center mt-6 text-white uppercase text-sm font-semibold tracking-widest z-40"
                         >
@@ -225,7 +225,7 @@ const Cart = () => {
                         <Link
                             href={"#"}
                             onClick={() => {
-                                toggleCart();
+                                dispatch(toggleCart());
                             }}
                             className="bg-btn-orange/50 p-4 text-center mt-6 text-white uppercase text-sm font-semibold tracking-widest z-40 cursor-default"
                         >
