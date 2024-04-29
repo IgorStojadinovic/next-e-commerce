@@ -14,20 +14,13 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-
-            <StoreProvider >
+            <StoreProvider>
                 <body className={`${manrope.className} relative overflow-x-hidden `}>
-
-                        <Navbar/>
-
-
-
-                    {children}
-                    <Footer/>
-
+                <Navbar/>
+                {children}
+                <Footer/>
                 </body>
             </StoreProvider>
-
         </html>
     );
 }
