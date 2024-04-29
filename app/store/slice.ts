@@ -106,6 +106,8 @@ export const {
     toggleMenu,
     toggleCart,
 } = cartSlice.actions;
-export const getValue = (state: CartState) => state.quantity;
-export const isOpen = (state: CartState) => state.isOpen;
+export const getQuantity = (state: CartState) => state.quantity;
+export const getCart = (state: CartState) => state.cart;
+export const getMenuStatus = (state: CartState) => state.isOpen;
+export const getCartStatus = (state: CartState) => state.cartIsOpen;
 export default cartSlice.reducer;
