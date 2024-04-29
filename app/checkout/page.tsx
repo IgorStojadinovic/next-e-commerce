@@ -16,7 +16,7 @@ import clsx from 'clsx'
 
 const Checkout = () => {
     const router = useRouter()
-    const [orderComplited, setOrderCompleted] = useState(false)
+    const [orderCompleted, setOrderCompleted] = useState(false)
     const [expandCart, setExpandCart] = useState(false)
     const cart = useSelector((state: RootState) => state.cart.cart)
     const dispatch = useDispatch()
@@ -30,18 +30,20 @@ const Checkout = () => {
         setOrderCompleted(true)
         e.preventDefault()
     }
+
+
     return (
-        <div className='px-6 2xl:px-80 bg-black/10 relative'>
+        <div className='px-6 2xl:px-80 bg-black/10 '>
             <div
                 className={clsx(
                     '',
                     {
                         'bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-50':
-                        orderComplited,
+                        orderCompleted,
                     },
                     {
                         'bg-black/30 absolute top-0 left-0 right-0 bottom-0 z-50':
-                        orderComplited,
+                        orderCompleted,
                     }
                 )}
             ></div>
@@ -51,7 +53,7 @@ const Checkout = () => {
             >
                 Go Back
             </button>
-            <div className='p-6 '>
+            <div className='p-6 relative '>
                 <h1 className='uppercase text-[1.75rem] font-bold mb-8'>checkout</h1>
                 <p className='uppercase text-sm font-bold text-orange tracking-widest mb-4'>
                     billing detail
@@ -357,11 +359,13 @@ const Checkout = () => {
                         </div>
                     </section>
                 </form>
-                {orderComplited && (
+                {orderCompleted && (
+
                     <section
-                        className='flex-col gap-6 p-8 absolute top-[10rem] 2xl:right-72 2xl:top-[2rem]  mx-6 shadow-xl z-[9999] bg-white h-auto rounded-lg'>
+                        className='flex-col gap-6 p-8 absolute top-0  right-0  mx-6 shadow-xl z-[9999] bg-white h-auto rounded-lg'>
+
                         <div
-                            className='bg-orange rounded-full h-16 w-16 flex justify-center items-center text-white text-3xl'>
+                            className='bg-orange rounded-full h-16 w-16  flex justify-center items-center text-white text-3xl'>
                             <IoCheckmarkSharp/>
                         </div>
                         <h2 className='font-bold uppercase text-2xl pr-24 tracking-wide my-4'>
@@ -370,6 +374,7 @@ const Checkout = () => {
                         <p className='text-black/60 font-medium mb-3'>
                             You will receive an email confirmation shortly.
                         </p>
+
                         <>
                             <div
                                 className={clsx(
@@ -492,7 +497,9 @@ const Checkout = () => {
                                 Back to home
                             </button>
                         </>
+
                     </section>
+
                 )}
             </div>
         </div>
