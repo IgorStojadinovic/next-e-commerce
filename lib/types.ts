@@ -77,11 +77,11 @@ export type CartItem = {
   itemKey: string;
 };
 
-type MenuStatus = false | true;
+
 
 export type CartState= {
-  isOpen: MenuStatus;
-  cartIsOpen: MenuStatus;
+  isOpen: boolean;
+  cartIsOpen: boolean;
   cart: CartItem[];
   quantity: number;
 };
