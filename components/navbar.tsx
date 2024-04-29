@@ -74,7 +74,7 @@ const Navbar = (): React.JSX.Element => {
             >
                 <div className="border-b-[0.5px] w-full flex justify-between py-9  z-[999] abolsute">
                     <a
-                        className="text-2xl font-extrabold text-white z-40 hover:text-orange transition-all duration-300"
+                        className="text-2xl font-extrabold text-white z-40 hover:text-orange transition-all duration-300 "
                         href="/"
                     >
                         audiophile
