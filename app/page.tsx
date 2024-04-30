@@ -18,6 +18,7 @@ import {getCartStatus,getMenuStatus} from "@/app/store/slice";
 export default function Home() {
     const isOpen = useSelector(getMenuStatus);
     const cartIsOpen = useSelector(getCartStatus);
+    
 
     return (
         <main>
